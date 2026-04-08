@@ -94,7 +94,7 @@
    * color-2(#2F352B)
    * color-3(#1A1A1A)
    */
-    --color-1: hsla(12, 75%, 45%, 1);
+    --color-1: rgb(71, 160, 23);
     --color-2: hsla(96, 10%, 19%, 1);
     --color-3: hsla(0, 0%, 10%, 1);
 
@@ -3034,7 +3034,7 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-header {
-    --header-height : 72px;
+    --header-height : 90px;
     --logo-width    : 10.2rem;
     --width-grid-max: calc(var(--width-sixteen-cols) - calc(var(--gutter) * 2));
     --box-shadow    : 0 1px 1px rgba(0, 0, 0, 0.02),
@@ -3110,6 +3110,7 @@ td:last-child {
     z-index    : 3;
     line-height: 1;
     transform  : translate(0.2rem, -0.05em);
+    margin-top: -6px; /* increase the number to move it higher */
 }
 
 .s-header__logo a {
@@ -3123,7 +3124,7 @@ td:last-child {
 .s-header__logo img {
     width         : var(--logo-width);
     margin        : 0;
-    vertical-align: bottom;
+    vertical-align: middle;
 }
 
 /* --------------------------------------------------------------------
@@ -3370,9 +3371,9 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-intro {
-    --content-padding-top   : max(20rem, 18vh);
+    --content-padding-top   : max(12rem, 12vh);
     --content-padding-bottom: 8rem;
-    --content-min-height    : calc(var(--vspace-1) * 27);
+    --content-min-height    : calc(var(--vspace-1) * 23);
     z-index                 : 2;
     background-color        : var(--color-gray-10);
     width                   : 100%;
